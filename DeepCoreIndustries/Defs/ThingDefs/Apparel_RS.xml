@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Exoframe</defName>
+		<label>DCI Mining Exoframe Mk1</label>
+		<description>An exoframe specially designed and manufactured by and for Deep Core Industries personnel to assist mining operations by improving the user physical capabilities.</description>
+		<graphicData> <texPath>Things/Apparel/Exo</texPath>
+		<graphicClass>Graphic_Single</graphicClass> </graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+      <Mass>6</Mass>
+     			<WorkToMake>98000</WorkToMake>
+			<MaxHitPoints>450</MaxHitPoints>
+			<MarketValue>1150</MarketValue>
+      <EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.8</MiningSpeed>
+			<MoveSpeed>1.1</MoveSpeed>
+		</equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>55</Plasteel>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+			<generateCommonality>0.5</generateCommonality>
+		<apparel>
+<wornGraphicPath>Things/Apparel/Exo</wornGraphicPath>
+			<layers>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+ <!-- ============================================== -->
+
+</Defs>
