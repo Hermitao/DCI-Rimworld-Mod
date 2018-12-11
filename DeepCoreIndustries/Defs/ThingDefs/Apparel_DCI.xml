@@ -17,7 +17,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MiningSpeed>0.8</MiningSpeed>
-			<MoveSpeed>1.1</MoveSpeed>
+			<MoveSpeed>0.5</MoveSpeed>
 		</equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
