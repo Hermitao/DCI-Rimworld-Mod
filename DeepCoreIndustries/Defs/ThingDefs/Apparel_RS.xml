@@ -5,7 +5,7 @@
 		<defName>Apparel_DCIExoframe</defName>
 		<label>DCI Mining Exoframe Mk1</label>
 		<description>An exoframe with drill attachments manufactured by Deep Core Industries. Assists mining operations by improving the user physical capabilities.</description>
-		<graphicData> <texPath>Things/Apparel/Exo</texPath>
+		<graphicData> <texPath>Things/Apparel/DExo</texPath>
 		<graphicClass>Graphic_Single</graphicClass> </graphicData>
 		<tickerType>Normal</tickerType>
 		<statBases>
@@ -38,7 +38,7 @@
     </recipeMaker>
 			<generateCommonality>0.5</generateCommonality>
 		<apparel>
-<wornGraphicPath>Things/Apparel/Exo</wornGraphicPath>
+<wornGraphicPath>Things/Apparel/DExo</wornGraphicPath>
 			<layers>
 			    <li>Shell</li>
 			</layers>
