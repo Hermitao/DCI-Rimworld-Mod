@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Apparel_Exoframe</defName>
+		<defName>Apparel_DCIExoframe</defName>
 		<label>DCI Mining Exoframe Mk1</label>
 		<description>An exoframe specially designed and manufactured by and for Deep Core Industries personnel to assist mining operations by improving the user physical capabilities.</description>
 		<graphicData> <texPath>Things/Apparel/Exo</texPath>
