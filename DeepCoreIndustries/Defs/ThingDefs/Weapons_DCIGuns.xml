@@ -103,7 +103,7 @@
 		<projectile>
 		    <flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>80</speed>
 		</projectile>
@@ -179,6 +179,19 @@
 	
 	<!-- ============================================== -->
 	
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_DCIAssaultRifle</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
 	<ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_DCIAssaultRifle</defName>
     <label>DCI assault rifle</label>
@@ -244,19 +257,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
-	<ThingDef ParentName="BaseBullet">
-    <defName>Bullet_DCIAssaultRifle</defName>
-    <label>assault rifle bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <speed>85</speed>
-    </projectile>
   </ThingDef>
 	
 </Defs>
