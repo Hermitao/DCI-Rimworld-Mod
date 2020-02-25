@@ -259,4 +259,85 @@
     </tools>
   </ThingDef>
 	
+	<!-- ============================================== -->
+	
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_DCIIncendiaryRocketLauncher</defName>
+    <label>incendiary rocket launcher bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_DCIIncendiaryRocketLauncher</defName>
+    <label>DCI incendiary rocket launcher</label>
+    <description>Fire it up</description>
+    <graphicData>
+      <texPath>Things/A16/DCIIncendiaryRocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>1.50</AccuracyLong>
+      <RangedWeapon_Cooldown>5.00</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_DCIAssaultRifle</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>50</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 </Defs>
