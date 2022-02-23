@@ -1,0 +1,4 @@
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\DeepCoreIndustries\Assemblies\DeepCoreIndustries.dll
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\DeepCoreIndustries\Source\DeepCoreIndustries\obj\Debug\DeepCoreIndustries.csproj.AssemblyReference.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\DeepCoreIndustries\Source\DeepCoreIndustries\obj\Debug\DeepCoreIndustries.csproj.CoreCompileInputs.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\DeepCoreIndustries\Source\DeepCoreIndustries\obj\Debug\DeepCoreIndustries.dll
