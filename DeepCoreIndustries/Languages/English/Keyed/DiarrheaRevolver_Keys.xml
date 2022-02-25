@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <DCI_DiarrheaBullet_IncreaseMote>Diarrhea at {0}% intensity</DCI_DiarrheaBullet_IncreaseMote>
+  <DCI_DiarrheaBullet_SuccessMote>{0} gave {1} diarrhea!</DCI_DiarrheaBullet_SuccessMote>
+  <DCI_DiarrheaBullet_FailureMote>Failure in giving diarrhea: {0} chance</DCI_DiarrheaBullet_Failure>
+</LanguageData>

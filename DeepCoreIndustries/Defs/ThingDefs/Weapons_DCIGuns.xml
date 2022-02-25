@@ -340,4 +340,95 @@
       </li>
     </tools>
   </ThingDef>
+	
+	
+	<ThingDef Class="DCI.ThingDef_DiarrheaBullet" ParentName="BaseBullet">
+		<defName>DCI_Bullet_Diarrhea</defName>
+		<label>explosive diarrhea bullet</label>
+		<graphicData>
+		  <texPath>Things/Projectile/Bullet_Small</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <damageDef>Bullet</damageDef>
+		  <damageAmountBase>0</damageAmountBase>
+		  <stoppingPower>1</stoppingPower>
+		  <speed>55</speed>
+		</projectile>
+		
+		<AddHediffChance>1.0</AddHediffChance>
+		<HediffToAdd>FoodPoisoning</HediffToAdd>
+		<thingClass>DCI.Projectile_Diarrhea</thingClass>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>DCI_Weapon_DiarrheaRevolver</defName>
+		<label>Diarrhea Revolver</label>
+		<description>Exactly what it says in the name.</description>
+		<graphicData>
+		  <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<statBases>
+		  <WorkToMake>4000</WorkToMake>
+		  <Mass>1.4</Mass>
+		  <AccuracyTouch>0.9</AccuracyTouch>
+		  <AccuracyShort>0.85</AccuracyShort>
+		  <AccuracyMedium>0.65</AccuracyMedium>
+		  <AccuracyLong>0.45</AccuracyLong>
+		  <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+		  <li>SimpleGun</li>
+		  <li>Revolver</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>RangedLight</li>
+		</weaponClasses>
+		<costList>
+		  <Steel>30</Steel>
+		  <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>3</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>DCI_Bullet_Diarrhea</defaultProjectile>
+			<warmupTime>0.3</warmupTime>
+			<range>25.9</range>
+			<soundCast>Shot_Revolver</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>grip</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+	  </ThingDef>
+	
 </Defs>

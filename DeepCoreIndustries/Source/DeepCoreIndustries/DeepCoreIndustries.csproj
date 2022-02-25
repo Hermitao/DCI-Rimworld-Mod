@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeepCoreIndustries.cs" />
+    <Compile Include="DiarrheaBullet.cs" />
+    <Compile Include="DiarrheaRevolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
